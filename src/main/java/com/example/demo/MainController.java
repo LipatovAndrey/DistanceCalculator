@@ -58,12 +58,13 @@ public class MainController {
 
 
 
-    @PostMapping
+    @PostMapping("/addCamera")
     public String addCamera(@RequestParam String name, String brand, String sensorWidth, String sensorHeight, String fokalLength, String imgWidthPx,
                             String imgHeightPx,  Map<String, Object> model){
 
         serviceRegister.registerNewCam(name, brand, sensorWidth, sensorHeight, fokalLength, imgWidthPx, imgHeightPx);
-        model.put("cameras", serviceGetRegisterCams);
+        model.put("cameras", serviceGetRegisterCams.getRegisterCams());
+        log.info("add");
         return "show";
     }
 

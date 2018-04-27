@@ -6,14 +6,14 @@
 </head>
 <body>
 <div>
-    <form method="post">
-        <input type="text" name="brand" placeholder="Brand">
-        <input type="text" name="name" placeholder="name">
-        <input type="text" name="sensorWidth" placeholder="sensorWidth">
-        <input type="text" name="sensorHeight" placeholder="sensorHeight">
-        <input type="text" name="fokalLength" placeholder="Фокуcное расстояние">
-        <input type="text" name="imgHeightPx" placeholder="Длина изображения, пиксель">
-        <input type="text" name="imgWidthPx" placeholder="Ширина изображения, пиксель">
+    <form method="post" action = "addCamera">
+        <input type="text" required="required" name="brand" placeholder="Brand">
+        <input type="text" required="required" name="name" placeholder="name">
+        <input type="text" required="required" name="sensorWidth" placeholder="sensorWidth">
+        <input type="text" required="required" name="sensorHeight" placeholder="sensorHeight">
+        <input type="text" required="required" name="fokalLength" placeholder="Фокуcное расстояние">
+        <input type="text" required="required" name="imgHeightPx" placeholder="Длина изображения, пиксель">
+        <input type="text" required="required" name="imgWidthPx" placeholder="Ширина изображения, пиксель">
 
         <button type="submit" >Отправить</button>
     </form>
