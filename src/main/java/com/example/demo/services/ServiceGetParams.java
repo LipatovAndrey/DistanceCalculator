@@ -106,11 +106,11 @@ public class ServiceGetParams{
         return squer;
     }
     public Double getSquerInKMetres(Integer id, Integer flyHeight) {
-        Double squer = getSquerInMetres(id, flyHeight) /1000;
+        Double squer = getSquerInMetres(id, flyHeight) /1000000;
         return squer;
     }
     public Double getResolution(Integer id, Integer flyHeight) {
-        return getLengthPeaceOfLandById(id, flyHeight) / getImgWidthPxById(id);
+        return (getLengthPeaceOfLandById(id, flyHeight) * 10)/ getImgWidthPxById(id);
 
     }
 }
