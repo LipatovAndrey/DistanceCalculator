@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div>
+    <form method="post">
+        <input type="text" name="brand" placeholder="Brand">
+        <input type="text" name="name" placeholder="name">
+        <input type="text" name="sensorWidth" placeholder="sensorWidth">
+        <input type="text" name="sensorHeight" placeholder="sensorHeight">
+        <input type="text" name="fokalLength" placeholder="Фокуcное расстояние">
+        <input type="text" name="imgHeightPx" placeholder="Длина изображения, пиксель">
+        <input type="text" name="imgWidthPx" placeholder="Ширина изображения, пиксель">
+
+        <button type="submit" >Отправить</button>
+    </form>
+
+
+
+</div>
+<div> Список камер</div>
+{{#cameras}}
+<div>
+        <b>{{id}}</b>
+        <b>{{name}}</b>
+        <b>{{brand}}</b>
+        <b>{{sensorWidth}}</b>
+        <b>{{sensorHeight}}</b>
+        <b>{{fokalLength}}</b>
+        <b>{{imgHeightPx}}</b>
+        <b>{{imgWidthPx}} </b>
+
+</div>
+{{/cameras}}
+</body>
+</html>
