@@ -93,6 +93,7 @@ public class ServiceGetParams{
         return dw;
     }
 
+
     public Double getWidthPeaceOfLandById(Integer id, Integer flyHeight) {
         Camera camera = cameraRepo.findById(id);
         Float sh = camera.getSensorHeight();

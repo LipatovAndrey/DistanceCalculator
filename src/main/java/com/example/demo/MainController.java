@@ -43,6 +43,8 @@ public class MainController {
             log.info(String.valueOf("Количество фотографий на 200х200 метров "+serviceNumberOfPhoto.getNumberOfPhoto(serviceDistanceBetweenPhoto.distanceBetweenPointsX(8,150,30.0),
                     serviceDistanceBetweenPhoto.distanceBetweenPointsY(c.getId(),150,30.0),
                     200.0, 200.0)));
+            log.info(String.valueOf("расстояние между точками по параметрам "+ serviceDistanceBetweenPhoto.distanceBetweenPointsXParams(c.getSensorWidth(), c.getFokalLength(), 150, 30.0)));
+            log.info(String.valueOf("расстояние между точками по параметрам "+ serviceDistanceBetweenPhoto.distanceBetweenPointsYParams(c.getSensorHeight(), c.getFokalLength(), 150, 30.0)));
             log.info(String.valueOf("длина в метрах "+ serviceGetParams.getLengthPeaceOfLandById(c.getId(), 150)));
             log.info(String.valueOf("ширина в метрах "+ serviceGetParams.getWidthPeaceOfLandById(c.getId(), 150)));
             log.info(String.valueOf("Площадь в кв. метрах "+ serviceGetParams.getSquerInMetres(c.getId(), 150)));
